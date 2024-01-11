@@ -64,14 +64,11 @@ The analysis provides valuable insights into customer behavior, with actionable 
 
 ## How to Use
 1. **Clone the Repository**
-   - Clone this repository to your local machine using `git clone https://github.com/your-username/bank-marketing-analysis.git`
+   - Clone this repository to your local machine using `git clone https://github.com/hassankhan2608/bank-marketing-analysis.git`
 
-2. **Install Dependencies**
-   - Install the required dependencies using `pip install -r requirements.txt`
-
-3. **Execute the Code**
+2. **Execute the Code**
    - Execute the Jupyter Notebook `Bank_Marketing_Analysis.ipynb` or use the provided Python scripts for model training and prediction.
 
 ## Acknowledgments
-This project was developed by [Your Name]. Feel free to collaborate and provide feedback.
+This project was developed by Mohd Hassan Khan. Feel free to collaborate and provide feedback.
 
