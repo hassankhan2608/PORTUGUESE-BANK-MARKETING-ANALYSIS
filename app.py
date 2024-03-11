@@ -32,11 +32,11 @@ categorical_mappings = {
 
 # Input widgets for categorical features
 col1, col2, col3, col4, col5 = st.columns(5)
-selected_category = {feature: col1.selectbox(f'{feature}', options) for feature, options in list(categorical_mappings.items())[:2]}
-selected_category.update({feature: col2.selectbox(f'{feature}', options) for feature, options in list(categorical_mappings.items())[2:4]})
-selected_category.update({feature: col3.selectbox(f'{feature}', options) for feature, options in list(categorical_mappings.items())[4:6]})
-selected_category.update({feature: col4.selectbox(f'{feature}', options) for feature, options in list(categorical_mappings.items())[6:8]})
-selected_category.update({feature: col5.selectbox(f'{feature}', options) for feature, options in list(categorical_mappings.items())[8:]})
+selected_category = {feature: col1.selectbox(f'{feature}', options, index=None) for feature, options in list(categorical_mappings.items())[:2]}
+selected_category.update({feature: col2.selectbox(f'{feature}', options, index=None) for feature, options in list(categorical_mappings.items())[2:4]})
+selected_category.update({feature: col3.selectbox(f'{feature}', options, index=None) for feature, options in list(categorical_mappings.items())[4:6]})
+selected_category.update({feature: col4.selectbox(f'{feature}', options, index=None) for feature, options in list(categorical_mappings.items())[6:8]})
+selected_category.update({feature: col5.selectbox(f'{feature}', options, index=None) for feature, options in list(categorical_mappings.items())[8:]})
 
 # Input widgets for numerical features
 col6, col7 = st.columns(2)
@@ -46,38 +46,43 @@ campaign = col7.slider('Campaign', 1, 20, 1)
 
 # Button to predict
 if st.button('Predict'):
-    # Create a DataFrame with the selected data
-    data = {
-        'Feature': list(selected_category.keys()) + ['Age', 'Campaign'],
-        'Value': list(selected_category.values()) + [age, campaign]
-    }
-    df = pd.DataFrame(data)
-    
-    # Transpose the DataFrame for horizontal display
-    df_transposed = df.T
-    df_transposed.columns = df_transposed.iloc[0]
-    df_transposed = df_transposed.drop('Feature')
-    
-    st.table(df_transposed)
-    
-    encoded_features = []
-    for feature, value in selected_category.items():
-        encoder = label_encoders[feature]
-        encoded_value = encoder.transform([value])[0]
-        encoded_features.append(encoded_value)
-    
-    # Prepare input data for prediction
-    input_data = np.array(encoded_features + [age, campaign]).reshape(1, -1)
-    
-    # Make prediction
-    prediction = model.predict(input_data)[0]
-    prediction_text = 'Yes' if prediction == 1 else 'No'
-    if prediction_text == 'Yes':
-        styled_prediction = '<span style="font-size: 20px; color: green; font-weight: bold;">Yes</span>'
+    if None in selected_category.values():
+        missing_categories = [key for key, value in selected_category.items() if value is None]
+        missing_categories_str = ", ".join(missing_categories)
+        st.error(f"Please select values for the following categorical features: {missing_categories_str}")
     else:
-        styled_prediction = '<span style="font-size: 20px; color: red; font-weight: bold;">No</span>'
-    
-    # Display prediction with a subheader
-    st.subheader("Prediction Result")
-    st.markdown(f"The Customer is likely to Say {styled_prediction} to the Term Deposit", unsafe_allow_html=True)
+        # Create a DataFrame with the selected data
+        data = {
+            'Feature': list(selected_category.keys()) + ['Age', 'Campaign'],
+            'Value': list(selected_category.values()) + [age, campaign]
+        }
+        df = pd.DataFrame(data)
+        
+        # Transpose the DataFrame for horizontal display
+        df_transposed = df.T
+        df_transposed.columns = df_transposed.iloc[0]
+        df_transposed = df_transposed.drop('Feature')
+        
+        st.table(df_transposed)
+        
+        encoded_features = []
+        for feature, value in selected_category.items():
+            encoder = label_encoders[feature]
+            encoded_value = encoder.transform([value])[0]
+            encoded_features.append(encoded_value)
+        
+        # Prepare input data for prediction
+        input_data = np.array(encoded_features + [age, campaign]).reshape(1, -1)
+        
+        # Make prediction
+        prediction = model.predict(input_data)[0]
+        prediction_text = 'Yes' if prediction == 1 else 'No'
+        if prediction_text == 'Yes':
+            styled_prediction = '<span style="font-size: 20px; color: green; font-weight: bold;">Yes</span>'
+        else:
+            styled_prediction = '<span style="font-size: 20px; color: red; font-weight: bold;">No</span>'
+        
+        # Display prediction with a subheader
+        st.subheader("Prediction Result")
+        st.markdown(f"The Customer is likely to Say {styled_prediction} to the Term Deposit", unsafe_allow_html=True)
 
