@@ -28,7 +28,7 @@ To ensure data quality, we handled missing values, filtered the dataset to keep 
 
 ## Exploratory Data Analysis
 
-<img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/d6672bad-0a2f-46c0-86b9-089a7b407d73" alt="Response Distribution" width="500" align="left">
+<img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/d6672bad-0a2f-46c0-86b9-089a7b407d73" alt="Response Distribution" width="500">
 - The target variable ('response') distribution is highly imbalanced, with only 11% of customers subscribing to the term deposit.
 
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/6c677b32-d30c-41d0-a5c4-a69c000b4327" alt="Age vs Response" width="500" align="left"> 
