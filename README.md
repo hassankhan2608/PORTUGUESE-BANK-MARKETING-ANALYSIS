@@ -4,7 +4,6 @@
 
 
 ![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/f944911f-d6e0-475f-965d-39c787a5a874)
-<img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/f944911f-d6e0-475f-965d-39c787a5a874" alt="Banner Image" width="500">
 
 
 ## Introduction
