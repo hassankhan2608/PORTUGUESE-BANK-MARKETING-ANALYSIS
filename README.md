@@ -89,7 +89,7 @@ We divided the dataset into independent variables (X) and the dependent variable
 
 ## Choosing the Right Model
 ![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/4cfdf5d2-4944-41e8-befc-5f28193f95a4)
-After evaluating various models, including Logistic Regression, Decision Tree Classifier, Random Forest Classifier, and XGBoost Classifier, the Random Forest Classifier emerged as the top-performing algorithm for our Term Deposit Prediction. It achieved the highest accuracy, precision, recall, and F1-score, demonstrating its robustness and effectiveness in handling the complexities of our dataset.
+* After evaluating various models, including Logistic Regression, Decision Tree Classifier, Random Forest Classifier, and XGBoost Classifier, the Random Forest Classifier emerged as the top-performing algorithm for our Term Deposit Prediction. It achieved the highest accuracy, precision, recall, and F1-score, demonstrating its robustness and effectiveness in handling the complexities of our dataset.
 
 ## Deeper Insights into Random Forest Model
 
