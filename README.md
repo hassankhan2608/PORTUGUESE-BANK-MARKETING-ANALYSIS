@@ -1,4 +1,6 @@
+---
 # Portuguese Bank Marketing Campaign Analysis using Machine Learning 
+---
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Jupyter Notebook](https://img.shields.io/badge/-Jupyter%20Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white) ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![Seaborn](https://img.shields.io/badge/-Seaborn-339933?style=flat-square&logo=seaborn&logoColor=white) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-339933?style=flat-square&logo=matplotlib&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) ![PowerPoint](https://img.shields.io/badge/-PowerPoint-B7472A?style=flat-square&logo=microsoft-powerpoint&logoColor=white)
 
 ![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/f944911f-d6e0-475f-965d-39c787a5a874)
@@ -34,35 +36,42 @@ To ensure data quality, we handled missing values, filtered the dataset to keep 
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/6c677b32-d30c-41d0-a5c4-a69c000b4327" alt="Age vs Response" width="500">
 
 - Customers aged 60+ and 20 have relatively higher positive responses compared to other age groups.
-
+---
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/c1fa101f-161d-47db-8dc4-71b84f5c3f82" alt="Marital Status vs Response" width="500">
 
 - Single customers have a higher proportion of positive responses than married or divorced customers.
 
+---
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/16b97a63-8ddf-4d34-aea5-7e7f0977f0a7" alt="Job vs Response" width="500">
 
 - Retired and student customers seem more interested in the campaign.
 
+---
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/b47159e6-a4c8-4219-a584-ebed52c417a8" alt="Education vs Response" width="500">
 
 - University degree holders had the highest number of contacts and the highest proportion of positive responses.
 
+---
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/ae4fd287-9547-489a-8f4d-4982f4b46fd3" alt="Contact Type vs Response" width="500">
 
 - Cellular contacts led to more conversions than telephonic contacts.
 
+---
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/1f9bccbc-b4f9-4940-93b9-2a931c0cd69d" alt="Previous Outcome vs Response" width="500">
 
 - Previous successful campaign outcomes resulted in higher subscription rates.
 
+---
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/c7bab383-e939-476a-9688-8d59de7b6fe6" alt="Month vs Response" width="500">
 
 - Higher subscription rates were observed in March, September, October, and December.
 
+---
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/2a79904b-985d-49de-8548-63eaceff3d03" alt="Response vs Duration" width="500">
 
 - There is a moderate positive correlation between 'response' and the duration of calls.
 
+---
 <img src="https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/2efd5a8e-4dc8-4f95-a42d-cdfe67385fa2" alt="Duration Distribution" width="500">
 
 * The range of duration for contacts who responded with 'yes' was larger than for contacts who responded with 'no'. This means that the contacts who said yes had more variation in their conversation length than the contacts who said no.
