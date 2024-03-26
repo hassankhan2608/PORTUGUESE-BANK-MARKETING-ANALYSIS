@@ -30,14 +30,25 @@ To ensure data quality, we handled missing values, filtered the dataset to keep 
 Our exploratory data analysis revealed valuable insights:
 ![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/d6672bad-0a2f-46c0-86b9-089a7b407d73)
 - The target variable ('response') distribution is highly imbalanced, with only 11% of customers subscribing to the term deposit.
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/6c677b32-d30c-41d0-a5c4-a69c000b4327)
 - Customers aged 60+ and 20 have relatively higher positive responses compared to other age groups.
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/c1fa101f-161d-47db-8dc4-71b84f5c3f82)
 - Single customers have a higher proportion of positive responses than married or divorced customers.
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/16b97a63-8ddf-4d34-aea5-7e7f0977f0a7)
 - Retired and student customers seem more interested in the campaign.
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/b47159e6-a4c8-4219-a584-ebed52c417a8)
 - University degree holders had the highest number of contacts and the highest proportion of positive responses.
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/ae4fd287-9547-489a-8f4d-4982f4b46fd3)
 - Cellular contacts led to more conversions than telephonic contacts.
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/1f9bccbc-b4f9-4940-93b9-2a931c0cd69d)
 - Previous successful campaign outcomes resulted in higher subscription rates.
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/c7bab383-e939-476a-9688-8d59de7b6fe6)
 - Higher subscription rates were observed in March, September, October, and December.
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/2a79904b-985d-49de-8548-63eaceff3d03)
 - There is a moderate positive correlation between 'response' and the duration of calls.
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/2efd5a8e-4dc8-4f95-a42d-cdfe67385fa2)
+The range of duration for contacts who responded with 'yes' was larger than for contacts who responded with 'no'. This means that the contacts who said yes had more variation in their conversation length than the contacts who said no.
+The outliers in the graph indicate that there were some contacts who had very long or very short conversations, regardless of their response. These outliers may have some special characteristics or circumstances that affected their duration.
 
 ## Optimizing Features for Model Training
 
@@ -48,7 +59,7 @@ We applied label encoding to convert categorical variables into numerical values
 We divided the dataset into independent variables (X) and the dependent variable (y), split the data into training and testing sets (80% for training, 20% for testing), and applied the SMOTE technique to address class imbalance in the training set.
 
 ## Choosing the Right Model
-
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/4cfdf5d2-4944-41e8-befc-5f28193f95a4)
 After evaluating various models, including Logistic Regression, Decision Tree Classifier, Random Forest Classifier, and XGBoost Classifier, the Random Forest Classifier emerged as the top-performing algorithm for our Term Deposit Prediction. It achieved the highest accuracy, precision, recall, and F1-score, demonstrating its robustness and effectiveness in handling the complexities of our dataset.
 
 ## Deeper Insights into Random Forest Model
