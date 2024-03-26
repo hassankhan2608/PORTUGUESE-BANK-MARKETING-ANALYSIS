@@ -1,4 +1,9 @@
-# Portuguese Bank Marketing Campaign Analysis using Machine Learning ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Jupyter Notebook](https://img.shields.io/badge/-Jupyter%20Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white) ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![Seaborn](https://img.shields.io/badge/-Seaborn-339933?style=flat-square&logo=seaborn&logoColor=white) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-339933?style=flat-square&logo=matplotlib&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+# Portuguese Bank Marketing Campaign Analysis using Machine Learning 
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Jupyter Notebook](https://img.shields.io/badge/-Jupyter%20Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white) ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![Seaborn](https://img.shields.io/badge/-Seaborn-339933?style=flat-square&logo=seaborn&logoColor=white) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-339933?style=flat-square&logo=matplotlib&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+
+
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/f944911f-d6e0-475f-965d-39c787a5a874)
+
 
 ## Introduction
 
