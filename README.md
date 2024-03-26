@@ -28,7 +28,7 @@ To ensure data quality, we handled missing values, filtered the dataset to keep 
 ## Exploratory Data Analysis
 
 Our exploratory data analysis revealed valuable insights:
-
+![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/d6672bad-0a2f-46c0-86b9-089a7b407d73)
 - The target variable ('response') distribution is highly imbalanced, with only 11% of customers subscribing to the term deposit.
 - Customers aged 60+ and 20 have relatively higher positive responses compared to other age groups.
 - Single customers have a higher proportion of positive responses than married or divorced customers.
