@@ -47,8 +47,8 @@ Our exploratory data analysis revealed valuable insights:
 ![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/2a79904b-985d-49de-8548-63eaceff3d03)
 - There is a moderate positive correlation between 'response' and the duration of calls.
 ![image](https://github.com/hassankhan2608/PORTUGUESE-BANK-MARKETING-ANALYSIS/assets/149296407/2efd5a8e-4dc8-4f95-a42d-cdfe67385fa2)
-The range of duration for contacts who responded with 'yes' was larger than for contacts who responded with 'no'. This means that the contacts who said yes had more variation in their conversation length than the contacts who said no.
-The outliers in the graph indicate that there were some contacts who had very long or very short conversations, regardless of their response. These outliers may have some special characteristics or circumstances that affected their duration.
+- The range of duration for contacts who responded with 'yes' was larger than for contacts who responded with 'no'. This means that the contacts who said yes had more variation in their conversation length than the contacts who said no.
+- The outliers in the graph indicate that there were some contacts who had very long or very short conversations, regardless of their response. These outliers may have some special characteristics or circumstances that affected their duration.
 
 ## Optimizing Features for Model Training
 
